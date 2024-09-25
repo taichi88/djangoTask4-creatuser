@@ -1,0 +1,6 @@
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- This renders the form fields inside <p> tags -->
+    <button type="submit">Submit</button>
+</form>
