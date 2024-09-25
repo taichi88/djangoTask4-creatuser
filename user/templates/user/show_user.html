@@ -1,0 +1,22 @@
+<!-- show_user.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Users</title>
+</head>
+<body>
+    <h1>List of Users</h1>
+    
+    <ul>
+        {% for user in users %}
+            <li>Username: {{ user.username }} - Name: {{ user.name }}</li>  <!-- Display both username and name -->
+        {% empty %}
+            <li>No users found.</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{% url 'create_user' %}">Add User</a><br>
+    <a href="{% url 'delete_user' %}">Delete User</a><br>
+    <a href="{% url 'main_page' %}">Back to Main Page</a>
+</body>
+</html>

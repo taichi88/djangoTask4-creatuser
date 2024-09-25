@@ -1,0 +1,17 @@
+<!-- next_step.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Step</title>
+</head>
+<body>
+    <h1>User Added Successfully!</h1>
+    <p>What would you like to do next?</p>
+    
+    <a href="{% url 'create_user' %}">Add Another User</a><br>  <!-- New option -->
+    <a href="{% url 'show_user' %}">View Users</a><br>
+    <a href="{% url 'delete_user' %}">Delete User</a><br>
+
+    <a href="{% url 'main_page' %}">Back to Main Page</a>
+</body>
+</html>

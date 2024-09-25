@@ -1,7 +1,0 @@
-<h2>Are you sure you want to delete {{ user.name }}?</h2>
-
-<form method="post">
-    {% csrf_token %}
-    <button type="submit">Yes, delete</button>
-    <a href="{% url 'ShowUser' %}">Cancel</a>  <!-- Corrected the URL link -->
-</form>
